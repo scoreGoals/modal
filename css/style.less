@@ -34,8 +34,8 @@ a {
   min-height: 100vh;
   margin    : 0 auto;
 
-  display        : grid;
-  align-items    : center;
+  display    : grid;
+  align-items: center;
 
   font-family: 'Cairo', sans-serif;
   font-size  : 16px;
@@ -83,8 +83,19 @@ a {
   left            : 0;
   background-color: rgba(0, 0, 0, .7);
 
+
+  animation-name     : show-modal;
+  animation-duration : 0.4s;
+  animation-fill-mode: forwards;
+  /*сохранить результат анимации*/
+
 }
 
+@keyframes show-modal {
+  to {
+    background-color: rgba(0, 0, 0, 0.5)
+  }
+}
 
 
 .m-modal__content {
@@ -104,6 +115,10 @@ a {
   background: #f1f1f1;
   box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4);
   transform : translate(-50%, -50%);
+
+
+  animation-name    : animatetop;
+  animation-duration: 0.8s;
 
   .m-close {
     width      : 16px;
@@ -168,4 +183,29 @@ a {
     }
   }
 
+}
+
+
+@-webkit-keyframes animatetop {
+  from {
+    top    : -300px;
+    opacity: 0
+  }
+
+  to {
+    top    : 100;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top    : -300px;
+    opacity: 0
+  }
+
+  to {
+    top    : 100;
+    opacity: 1
+  }
 }
