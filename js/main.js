@@ -15,6 +15,7 @@ document.querySelectorAll(".m-close")[0].onclick = function() {
 // Когда пользователь кликает 'x', закрываем второе модальное окно.
 document.querySelectorAll(".m-close")[1].onclick = function() {
     modal.style.display = "none";
+
 }
 
 
