@@ -148,7 +148,6 @@ a {
     opacity: 0;
   }
   to {
-    top: 100;
     opacity: 1;
   }
 }
@@ -158,7 +157,6 @@ a {
     opacity: 0;
   }
   to {
-    top: 100;
     opacity: 1;
   }
 }
