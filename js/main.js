@@ -11,7 +11,7 @@ document.querySelectorAll(".m-close")[0].onclick = function() {
 }
 
 // Когда пользователь кликает по затемненному участку, закрываем модальное окно.
-modal.onclick = function() {
+document.querySelector(".m-modal__bg").onclick = function() {
     modal.style.display = "none";
 }
 
