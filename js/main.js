@@ -10,7 +10,12 @@ document.querySelectorAll(".m-close")[0].onclick = function() {
     modal.style.display = "none";
 }
 
-// Когда пользователь щелкает 'Esc' закрываем модальное окно.
+// Когда пользователь кликает по затемненному участку, закрываем модальное окно.
+modal.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Когда пользователь щелкает 'Esc', закрываем модальное окно.
 document.onkeyup = function(event) {
     if (event.keyCode === 27) {
         modal.style.display = "none";
