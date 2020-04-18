@@ -7,12 +7,12 @@ document.querySelector(".m-btn").onclick = function() {
     modal.style.display = "block";
 }
 
-// Когда пользователь кликает 'x', закрываем модальное окно.
+// Когда пользователь кликает 'x', закрываем первое модальное окно.
 document.querySelectorAll(".m-close")[0].onclick = function() {
     modal.style.display = "none";
 }
 
-// Когда пользователь кликает 'x', закрываем модальное окно.
+// Когда пользователь кликает 'x', закрываем второе модальное окно.
 document.querySelectorAll(".m-close")[1].onclick = function() {
     modal.style.display = "none";
 }
@@ -37,13 +37,13 @@ window.onclick = function(event) {
     }
 }
 
-// Когда пользователь кликает кнопку m-rule, открываем модальное окно.
+// Когда пользователь кликает кнопку m-rule, открываем второе модальное окно.
 document.querySelector(".m-rule").onclick = function() {
     info.style.display = "block";
     content.style.display = "none";
 }
 
-// Когда пользователь кликает кнопку m-back, открываем модальное окно.
+// Когда пользователь кликает кнопку m-back, возвращаем к первому модальному окно.
 document.querySelector(".m-back").onclick = function() {
     content.style.display = "block";
     info.style.display = "none";
